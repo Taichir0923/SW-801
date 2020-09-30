@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.main {
+    width: 100%;
+}
+/* .main__item {
+    width: 30%;
+    height: 200px;
+    border: 1px solid #000;
+}
+.item--blue {
+    background: rgb(0,0,255);
+    border-radius: 8px;
+} */
+img {
+    width: 100%;
+}
