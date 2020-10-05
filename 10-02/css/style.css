@@ -74,7 +74,7 @@
     width: 50%;
 }
 .footer__items__img img {
-    width: 50%;
+    width: 100px;
     margin-left: 1rem;
     margin-bottom: 1rem;
 }
@@ -89,6 +89,10 @@
     margin-left: 1rem;
     list-style: none;
     padding: 5px 0;
+}
+.main__web__foot {
+    width: 100% !important;
+    background: #223140 !important;
 }
 
 .header--items {
@@ -159,12 +163,22 @@
     .main-box {
         padding-bottom: 0;
     }
+    .main__animes {
+        width: 100%;
+    }
+    .animes__row {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .animes__box {
+        width: 31%;
+    }
 }
 @media(min-width: 1200px){
     .container {
-        width: 1200px;
-        display: flex;
-        margin: auto
+        max-width: 1150px;
+        margin: auto;
     }
     .main-box__ads {
         margin: 0;
