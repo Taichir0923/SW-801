@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* .body {
+    background-image: linear-gradient(45deg ,red, green);
+} */
+.outer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: repeating-linear-gradient(135deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(22.5deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),linear-gradient(90deg, hsl(194,74%,56%),hsl(266,74%,56%),hsl(338,74%,56%),hsl(50,74%,56%),hsl(122,74%,56%));
+    background-size: 200%;
+    animation: bgAnimate 20s linear infinite alternate;
+}
+.outer .inner {
+    width: 70%;
+    height: 400px;
+    border: 1px solid #000;
+    color: #ee6352;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+.outer .inner .gg {
+    background-image: linear-gradient(45deg,
+    #845ec2,
+    #d65db1,
+    #ff6f91,
+    #ff9671,
+    #ffc75f,
+    #f9f871
+    );
+    background-clip: text;
+    background-size: 400%;
+    animation: bgAnimate 5s infinite alternate;
+    color: transparent;
+}
+.gradient {
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    background-image: linear-gradient(45deg,
+    #845ec2,
+    #d65db1,
+    #ff6f91,
+    #ff9671,
+    #ffc75f,
+    #f9f871
+    );
+    transition: 200ms background-position; /* 1s = 1000ms */
+    background-position: left;
+    background-size: 300%;
+    color: #fff;
+}
+
+@keyframes bgAnimate {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+.gradient:hover {
+    background-position: right;
+}
