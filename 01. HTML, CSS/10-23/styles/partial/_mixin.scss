@@ -1,0 +1,29 @@
+@mixin bgColor {
+    background: greenyellow;
+}
+@mixin rightDown {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+@mixin left-centered {
+    display: flex;
+    align-items: center;
+}
+@mixin alignCenter {
+    text-align: center;
+}
+@mixin downCentered {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+@mixin leftDown {
+    display: flex;
+    align-items: flex-end;
+}
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
