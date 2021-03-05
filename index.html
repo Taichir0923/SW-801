@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal box and Navbar</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <h1>Logo</h1>
+        </div>
+        <div class="toggle" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+
+    <div class="menu active" id="menu">
+        <div class="menuHeader">
+            <div class="close" onclick="openMenu()">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="todo">
+        <div class="insert">
+            <input type="text" id="insertTask" placeholder="Хийх ажлыг оруулна уу...">
+            <button onclick="insertTask()">Insert</button>
+        </div>
+        <div class="tasks">
+            <ul id="list"></ul>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

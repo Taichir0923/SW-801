@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1890ff;
+    color: #fff;
+    font-size: 30px;
+}
+
+.header .logo {
+    padding: 0 1rem;
+}
+
+.header .toggle {
+    padding: 1rem;
+    transition: .3s;
+}
+
+.header .toggle:hover {
+    background: #fff;
+    color: #1890ff;
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 100vh;
+    background: #1890ff;
+    transition: .4s;
+}
+
+.menu .menuHeader {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #fff;
+}
+
+.menu .menuHeader .close {
+    padding: 1rem;
+    transition: .3s;
+    font-size: 30px;
+}
+
+.active {
+     transform: translateX(100%);
+}
+
+.todo {
+    width: 60%;
+    margin: auto;
+    margin-top: 2rem;
+    border: 1px solid #ccc;
+    min-height: 50vh;
+}
+
+.todo .insert {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.todo .insert input {
+    width: 80%;
+    padding: 1rem 0 1rem 1rem;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border: 1px solid #1890ff;
+    border-right: none;
+}
+
+.todo .insert input:focus {
+    outline: none;
+}
+
+.todo .insert button {
+    width: 10%;
+    padding: 1rem 0;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border: 1px solid #1890ff;
+    border-left: none;
+    background: #1890ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.todo .insert button:focus {
+    outline: none;
+}
+
+.todo .tasks {
+    width: 100%;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.todo .tasks img {
+    width: 100%;
+}
+
+.todo .tasks ul li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: hidden;
+    cursor: pointer;
+    transition: .3s;
+    align-items: center;
+    /* padding: 1rem 0; */
+}
+
+.todo .tasks ul li p {
+    padding-left: 1rem;
+}
+
+.todo .tasks ul li:hover {
+    background: rgba(24, 144, 255, .3);
+}
+
+.todo .tasks ul li:hover button {
+    transform: translateX(0);
+}
+
+.todo .tasks ul li button {
+    cursor: pointer;
+    transform: translateX(110%);
+    transition: .1s;
+    padding: 10px 20px;
+    background: #1890ff;
+    color: #fff;
+    border: 1px solid #1890ff;
+}
+
+.done {
+    text-decoration: line-through;
+}
