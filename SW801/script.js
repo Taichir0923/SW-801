@@ -263,7 +263,6 @@ addBtn.onclick = () => {
     });
 
     newBox.addEventListener('click', e => {
-
         modal.children[0].style.backgroundColor = e.target.style.backgroundColor;
         modal.classList.add('open');
     })
